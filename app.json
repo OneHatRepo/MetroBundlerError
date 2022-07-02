@@ -18,7 +18,6 @@
     "orientation": "portrait",
 	"primaryColor": "#00f",
 	"icon": "./assets/icon.png",
-	"scheme": "TestApp",
     "assetBundlePatterns": [
       "**/*"
     ],

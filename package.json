@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "esd": "cp .env.dev .env && EXPO_DEBUG=1 expo start --dev-client -c",
-    "ebp": "cp .env.production .env && eas build --profile production --auto-submit",
-    "ebs": "cp .env.staging .env && eas build --profile staging",
-    "ebt": "cp .env.testing .env && eas build --profile testing",
     "ebd": "cp .env.dev .env && eas build --profile dev",
     "start": "expo start --dev-client",
     "android": "expo run:android",
