@@ -1,7 +1,16 @@
+import { connectToDevTools } from 'react-devtools-core';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+if (__DEV__) {
+	connectToDevTools({
+		host: 'localhost',
+		port: 8097,
+	});
+}
+
 export default function App() {
+	debugger;
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>

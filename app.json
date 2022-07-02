@@ -1,33 +1,81 @@
 {
   "expo": {
     "name": "TestApp",
+	"description": "",
     "slug": "TestApp",
+	"backgroundColor": "#ffffff",
+    "owner": "aajaybird99",
+	"privacy": "unlisted",
     "version": "1.0.0",
+    "jsEngine": "hermes",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+	"platforms": [
+	  "ios",
+	  "android"
+	],
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+	"primaryColor": "#00f",
+	"icon": "./assets/icon.png",
+	"scheme": "TestApp",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
+	"userInterfaceStyle": "light",
+	"notification": {
+	  "icon": "./assets/notification-icon.png",
+	  "color": "#ffffff"
+	},
+	"updates": {
+	  "enabled": true,
+	  "checkAutomatically": "ON_LOAD",
+	  "fallbackToCacheTimeout": 10000,
+	  "url": "https://u.expo.dev/dc62616a-8259-4db5-a118-7f7ae804ad30"
+	},
+	"ios": {
+		"bundleIdentifier": "*** dynamically set in app.config.js ***",
+	  "buildNumber": "*** dynamically set in app.config.js ***",
+	  "supportsTablet": true,
+	  "requireFullScreen": true,
+	  "isTabletOnly": false,
+	  "usesIcloudStorage": false,
+	  "usesAppleSignIn": false,
+	  "accessesContactNotes": false,
+	  "infoPlist": {
+		"NSLocationAlwaysUsageDescription": "This app finds nearby venues by your GPS location. It also allows ordering from and delivery to your GPS location.",
+		"NSLocationAlwaysAndWhenInUseUsageDescription": "This app finds nearby venues by your GPS location. It also allows ordering from and delivery to your GPS location.",
+		"NSLocationWhenInUseUsageDescription": "This app finds nearby venues by your GPS location. It also allows ordering from and delivery to your GPS location.",
+		"NSCameraUsageDescription": "This app allows you to add user-generated photos and videos to menu items.",
+		"NSPhotoLibraryAddUsageDescription": "This app allows you to add user-generated photos and videos to menu items.",
+		"NSPhotoLibraryUsageDescription": "This app allows you to add user-generated photos and videos to menu items.",
+		"NSMicrophoneUsageDescription": "This app allows you to add user-generated videos to menu items.",
+		"NSUserTrackingUsageDescription": "Tracking is used to improve the app update experience."
+	  }
+	},
+    "plugins": [
+		"expo-tracking-transparency",
+      "expo-community-flipper"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+	"android": {
+	  "package": "*** dynamically set in app.config.js ***",
+	  "versionCode": 20,
+	  "permissions": [
+		"CAMERA",
+		"RECORD_AUDIO",
+		"READ_EXTERNAL_STORAGE",
+		"WRITE_EXTERNAL_STORAGE",
+		"ACCESS_COARSE_LOCATION",
+		"ACCESS_FINE_LOCATION"
+	  ]
+	},
+	"web": {
+	  "favicon": "./assets/favicon.png"
+	}
   }
 }
